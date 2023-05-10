@@ -57,6 +57,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'rest_framework.middleware.AuthenticationMiddleware',
+    'rest_framework.middleware.AuthorizationMiddleware',
 ]
 
 ROOT_URLCONF = 'service_vk.urls'
